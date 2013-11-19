@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+
+<title>Forms</title>
+<link rel="stylesheet" href="css/general.css">
+</head>
+
+<body>
+
+<form>
+	
+	<div>
+	<!-- All inputs must have labels
+	The label is associated wit the input using the 'for' attribute
+	The 'for' attribute must match the id of the inpute tag.
+	-->
+	<label for="name">
+	Name
+	<strong class="error">Please enter your name.</strong>
+	</label>
+	<input type="text" id="name" class="input-text input-error" required>
+
+	</div>
+
+	<div>
+		<label for="website">Web Site</label>
+		<input type="url" id="website" class="input-text" placeholder="http://domain.com"> 
+		<!-- placeholder is there to prove and example
+		it is not a replacement for the lable since it is not accessbile in any way. -->
+
+	</div>
+
+	<div>
+		<label for="email">E-Mail Address</label>
+		<input type="email" id="email" class="input-text" value="something@something.com">
+
+	</div>
+
+	<div>
+		<label for="favcolor">Favourite Colour</label>
+		<input type="color" id="favcolor" value="#f00">
+
+	</div>
+
+	<div>
+		<label for="birthday">Birthday</label>
+		<input type="date" id="birthday">
+
+	</div>
+
+	<div>
+		<label for="age">Age</label>
+		<input type="number" id="age" pattern="[0-9]*" min="1" max="130">
+
+	</div>
+
+
+
+	<div>
+		<label for="phone">Phone Number</label>
+		<input type="tel" id="phone" maxlength="10">
+
+	</div>
+
+
+
+
+
+	<div>
+		
+		<input type="checkbox" id="code" checked>
+		<label for="code">I love code!</label>
+
+	</div>
+
+	<fieldset>
+		<legend>How satisfied are you with something?</legend>
+		
+		<input type="radio" id="extreme" name="satisfaction">
+		<label for="extreme">Extremely angry</label>
+
+		<input type="radio" id="dissatisfied" name="satisfaction">
+		<label for="dissatisfied">Dissatisfied</label>
+
+		<input type="radio" id="satisfied" name="satisfaction">
+		<label for="satisfied">Satisfied</label>
+
+		<input type="radio" id="happy" name="satisfaction">
+		<label for="happy">Extremely Happy</label>
+
+	</fieldset>
+
+	<div>
+		
+		
+		<label for="bio">Describe yourself:</label>
+		<textarea id="bio" class="input-text"></textarea>
+
+	</div>
+
+	<div>
+		<label for="Dino">Favorite Dinosaur</label>
+		<select id="dino">
+			<option selected></option>
+			<option>Pteranaodon</option>
+			<option>T-Rex</option>
+			<option>Megasaurus</option>
+			<option>Potatosaurus</option>
+		</select>
+	</div>
+
+
+	<button type="submit">Submit</button>
+
+
+
+
+
+
+
+
+
+
+</form>
+
+</body>
