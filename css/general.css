@@ -35,8 +35,9 @@ button {
 .error {
 	display: block;
 	color: #f33;
+	font-style: italic;
 }
 
 .input-error {
-	border: 3px solid #f33;
+	border: 2px solid #f33;
 }
