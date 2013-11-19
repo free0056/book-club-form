@@ -11,10 +11,7 @@
 <form>
 	
 	<div>
-	<!-- All inputs must have labels
-	The label is associated wit the input using the 'for' attribute
-	The 'for' attribute must match the id of the inpute tag.
-	-->
+	
 	<label for="name">
 	Name
 	<strong class="error">Please enter your name.</strong>
@@ -23,65 +20,84 @@
 
 	</div>
 
-	<div>
-		<label for="website">Web Site</label>
-		<input type="url" id="website" class="input-text" placeholder="http://domain.com"> 
-		<!-- placeholder is there to prove and example
-		it is not a replacement for the lable since it is not accessbile in any way. -->
-
-	</div>
 
 	<div>
-		<label for="email">E-Mail Address</label>
-		<input type="email" id="email" class="input-text" value="something@something.com">
-
+		<label for="email">
+		E-Mail Address
+		<strong class="error">Please enter your e-mail address.</strong>
+		</label>
+		<input type="email" id="email" class="input-text input-error" maxlength="256" required>
 	</div>
-
-	<div>
-		<label for="favcolor">Favourite Colour</label>
-		<input type="color" id="favcolor" value="#f00">
-
-	</div>
-
-	<div>
-		<label for="birthday">Birthday</label>
-		<input type="date" id="birthday">
-
-	</div>
-
-	<div>
-		<label for="age">Age</label>
-		<input type="number" id="age" pattern="[0-9]*" min="1" max="130">
-
-	</div>
-
-
 
 	<div>
 		<label for="phone">Phone Number</label>
-		<input type="tel" id="phone" maxlength="10">
-
+		<input type="tel" id="phone">
 	</div>
 
+	<div>
+	<label for="address">Address</label>
+	<input type="text" id="address" class="input-text" required>
+	</div>
 
+	<div>
+	<label for="city">City</label>
+	<input type="text" id="city" class="input-text" required>
+	</div>
 
+	<div>
+		<label for="province">Province</label>
+		<select id="province" required>
+			<option></option>
+			<option>Alberta</option>
+			<option>British Columbia</option>
+			<option>Manitoba</option>
+			<option>New Brunswick</option>
+			<option>Newfoundland and Labrador</option>
+			<option>Nova Scotia</option>
+			<option selected>Ontario</option>
+			<option>Prince Edward Island</option>
+			<option>Quebec</option>
+			<option>Saskatchewan</option>
+			<option>Northwest Territories</option>
+			<option>Nunavut</option>
+			<option>Yukon</option>
+		</select>
+	</div>
 
+	<div>
+	<label for="postal">Postal Code</label>
+	<input type="text" id="postal" class="input-text" maxlength="7" required>
+	</div>
+
+	<div>
+	<label for="meeting">What time of day would be best to meet?</label>
+	<input type="time" id="meeting" class="input-text" required>
+	</div>
+
+	<div>
+	<label for="books">How many books have you read this year?</label>
+	<input type="number" id="books" class="input-text" required>
+	</div>
 
 	<div>
 		
-		<input type="checkbox" id="code" checked>
-		<label for="code">I love code!</label>
+		
+		<label for="favbook">Describe your favourite book & author:</label>
+		<textarea id="favbook" class="input-text"></textarea>
 
 	</div>
 
 	<fieldset>
-		<legend>How satisfied are you with something?</legend>
+		<legend>How much do you love this genre?</legend>
 		
 		<input type="radio" id="extreme" name="satisfaction">
-		<label for="extreme">Extremely angry</label>
+		<label for="extreme">Extremely Dissatisfied</label>
 
 		<input type="radio" id="dissatisfied" name="satisfaction">
 		<label for="dissatisfied">Dissatisfied</label>
+
+		<input type="radio" id="neutral" name="satisfaction">
+		<label for="neutral">Neutral</label>
 
 		<input type="radio" id="satisfied" name="satisfaction">
 		<label for="satisfied">Satisfied</label>
@@ -91,33 +107,17 @@
 
 	</fieldset>
 
-	<div>
-		
-		
-		<label for="bio">Describe yourself:</label>
-		<textarea id="bio" class="input-text"></textarea>
 
-	</div>
 
 	<div>
-		<label for="Dino">Favorite Dinosaur</label>
-		<select id="dino">
-			<option selected></option>
-			<option>Pteranaodon</option>
-			<option>T-Rex</option>
-			<option>Megasaurus</option>
-			<option>Potatosaurus</option>
-		</select>
+		
+		<input type="checkbox" id="code">
+		<label for="code">I love books!</label>
+
 	</div>
 
 
 	<button type="submit">Submit</button>
-
-
-
-
-
-
 
 
 
