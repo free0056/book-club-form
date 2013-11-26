@@ -1,6 +1,19 @@
+html {
+	background-image: url(../img/wallpaper.jpg);
+	margin: 0;
+	padding: 0;
+	background-position: center center;
+	font: normal 100%/1.5 sans-serif;
+	font-family: 'Monda', serif;
+}
+
+
+
+
 label {
 	cursor: pointer;
 	display: block;
+	color: #fff;
 }
 
 input,
@@ -25,9 +38,9 @@ input + label {
 button {
 	padding: 1em;
 	font-size: 1.125rem;
-	border: 2px solid #00f;
-	background-image: linear-gradient(to bottom, #fff, #00FA9A);
-	color: #00f;
+	border: 2px solid #000;
+	background-image: linear-gradient(to bottom, #fff, #000);
+	color: #fff;
 	border-radius: 8px;
 	cursor: pointer;
 }
@@ -40,4 +53,8 @@ button {
 
 .input-error {
 	border: 2px solid #f33;
+}
+
+div {
+	padding: 20px;
 }
